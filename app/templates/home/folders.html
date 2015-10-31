@@ -1,0 +1,205 @@
+<div class="container-fluid ng-scope fill-height" >
+    <div class="row fill-height">
+        <div class="col-lg-8 col-md-8">
+            <div class="row">
+
+                <!-- Navbar Starts -->
+                <div class="navbar navbar-default margin-b-0">
+                    <div class="navbar-header hidden-md-lg">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="javascript:void(0)"><img src="images/logo_xs.png" class="img-responsive" /></a>
+                    </div>
+                    <div class="navbar-collapse collapse navbar-responsive-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="javascript:void(0)"><img src="images/menu/denmark-flag.png" style="width:20px;" /></a></li>
+                            <li ><a href="javascript:void(0)"><img src="images/menu/uk-flag.png" style="width:20px;" /></a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <!--<li class="hidden-xs icon"><a href="javascript:void(0)"><i class="zmdi zmdi-home"></i></a></li>-->
+                            <li><a href="javascript:void(0)">Product</a></li>
+                            <li><a href="javascript:void(0)">Design Generator</a></li>
+                            <li><a href="javascript:void(0)">About</a></li>
+                            <li><a href="javascript:void(0)">Supplier</a></li>
+                            <li class="hidden-xs icon"><a href="javascript:void(0)"><i class="zmdi zmdi-account-circle"></i></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Navbar Ends -->
+
+
+                <!--                <img class="img-responsive hidden-xs-md" src="images/home_page/banner_1.jpg" />
+                                <img class="img-responsive hidden-sm-lg" src="images/home_page/banner_1_sm.jpg" />-->
+                <banner display-count="5" display-seconds="1000" display-caption="y" display-height="100px"></banner>
+            </div>
+
+            <!--<product-card display-object="app.searchResult" display-size="col-lg-4 col-md-12 col-sm-4"></product-card>-->
+           
+
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="stager hot-deals-stager">
+                            <div class="stager-base">
+                                <i class="zmdi zmdi-chevron-left arrow arrow-left"></i>
+                                <div class="stager-handle-content">
+                                    <div class="completed-portion"></div>
+                                    <a href="#" class="stager-handle completed"></a>
+                                    <a href="#" class="stager-handle completed"></a>
+                                    <a href="#" class="stager-handle  current"></a>
+                                    <a href="javascript:void(0)" class="stager-handle"></a>
+                                    <a href="javascript:void(0)" class="stager-handle"></a>
+                                </div>
+                                <i class="zmdi zmdi-chevron-right arrow arrow-right"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+</div>
+
+
+
+        <!-- Main Content Ends -->
+
+
+
+        <!-- Widget Content Starts -->
+        <div class="col-lg-4 col-md-4 fill-height" style="position: relative">
+
+            <div class="widget-column fill-height">
+
+                <div style="position: relative">
+                    <ul class="nav nav-tabs widget-nav">
+                        <li ><a href="#tab_1" data-toggle="tab"><i class="fa fa-search"></i></a></li>
+                        <li class="active"><a href="#tab_2" data-toggle="tab"><i class="fa fa-link"></i></a></li>
+                        <li><a href="#tab_3" data-toggle="tab"><i class="fa fa-folder"></i></a></li>
+                        <li><a href="#tab_4" data-toggle="tab"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                </div>
+                <div id="myTabContent" class="">
+                    <div class="" id="tab_1" ng-hide="folderList">
+                        <div class="heading-sideTab padding-20">
+                            <h3>
+                                Folders
+                                <div class="dropdown pull-right">
+                                    <a data-target="#" href="bootstrap-elements.html" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="true">
+                                        <i class="mdi-navigation-more-vert"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="javascript:void(0)">Action</a></li>
+                                        <li><a href="javascript:void(0)">Another action</a></li>
+                                        <li><a href="javascript:void(0)">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="javascript:void(0)">Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </h3>
+                        </div>
+                        <div class="col-md-12 padding-0 font-style-Roboto">
+                            <!-- <advanced-search ng-model="app.searchResult"></advanced-search> -->
+                            <folders></folders>
+                        </div>                      
+                        <div class="col-md-12  card-projection  padding-t-10 padding-b-10">
+                            <!-- <div class="card-projection"> -->
+                            <div class="col-md-2">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x circle-color-red "></i><i class="fa   fa-heart fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="font-weight-folderdesign ">Liked Products</label><br>
+                                <label class="date-label">Oct 28,2015</label>
+                            </div>
+                            <div class="col-md-4 show-edit-delete padding-t-10">
+                                <div class="col-md-2">
+                                    <a href=""><i class="fa  fa-edit (alias) fa-stack-1x"></i></a>
+                                </div>
+                                <div class="col-md-2">
+                                    <a href=""><i class="zmdi zmdi-delete"></i></a>
+                                </div>
+                            </div>
+                            <!-- </div> -->
+                        </div>
+                        <div class="col-md-12  card-projection  padding-t-10 padding-b-10">
+                            <!-- <div class="card-projection"> -->
+                            <div class="col-md-2">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x circle-color-blue "></i><i class="fa   fa-clock-o fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="font-weight-folderdesign ">Awaiting Orders</label><br>
+                                <label class="date-label">Oct 28,2015</label>
+                            </div>
+                            <div class="col-md-4 show-edit-delete padding-t-10">
+                                <div class="col-md-2">
+                                    <a href=""><i class="fa  fa-edit (alias) fa-stack-1x"></i></a>
+                                </div>
+                                <div class="col-md-2">
+                                    <a href=""><i class="zmdi zmdi-delete"></i></a>
+                                </div>
+                            </div>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                    <div ng-show="folderList">
+                        <!--<div class="opened-folder-header" id="">
+                            <div class="heading-sideTab">
+                                <div class="">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-arrow-left fa-stack-1x"></i>
+                                    </span>
+                                </div>
+                                <div>
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x circle-color-red "></i><i class="fa   fa-heart fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </div>
+                                <div class="heading-font-size">
+                                    <h3>Folders</h3>
+                                </div>
+                                <div class="right-side-list">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-th-list fa-stack-1x"></i>
+                                    </span>
+                                    <span class="fa-stack fa-lg thumnail-icon">
+                                        <i class="fa fa-th fa-stack-1x"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="folder-path text-center">
+                            <label class="folder-tabheader">Folder / Liked Product</label>
+                        </div>
+                        <div class="prod-img-content card-projection padding-10">
+                            <div class="product-image pull-left">
+                                <img src="images/cam.png">
+                            </div>
+                            <div class="clearfix">
+                            </div>
+                            <div class="heading-font-size">
+                                <h3 class="product-name-heading">Product Name 01</h3>
+                                <h6><label class="label-quantity">Quantity : <span>1200/2000</span></label></h6>
+                                <h6 class="clock-image"><span class="padding-l-15">Dec 2015</span></h6>
+                            </div>
+                            <div>
+                                <span class="money-value padding-l-20">$25</span>
+                            </div>
+                        </div>-->                      
+                        fgfgf  
+                    </div>              
+             </div>
+        </div>
+        <!-- Widget Content Ends -->
+    </div>
+</div>
+</div>
+
+<!-- Your site ends

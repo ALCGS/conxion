@@ -1,0 +1,127 @@
+<div class="widget advanced-search">
+    <form name="advancedSearchForm" novalidate>
+        <div class="form-group">
+            <!--<label for="productName">Product Name</label>-->
+            <input type="text" ng-model="productName" class="form-control floating-label" id="productName" placeholder="Product Name"
+                   onblur="this.setAttribute('value', this.value);" value="" name="productName" required>
+            <div ng-messages="advancedSearchForm.productName.$error" ng-show="advancedSearchForm.productName.$touched" >
+                <span class="validation-text font-weight" ng-message="required">Please enter product name.</span>
+            </div>
+           
+        </div>
+        <div class="form-group">
+            <!--<label for="categoryId">Category ID</label>-->
+            <input type="text" ng-model="categoryId" class="form-control floating-label" id=" categoryid" placeholder="Category ID" name="categoryId" >
+            <div ng-messages="advancedSearchForm.categoryId.$error" ng-show="advancedSearchForm.categoryId.$touched">
+                <span class="validation-text font-weight" ng-message="required">Please enter category ID.</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <!--<label for="categoryId">Category ID</label>-->
+            <input type="text" ng-model="Quantity" class="form-control floating-label" id="quantity" placeholder="Quantity">
+             <!--<span class="validation-text font-weight">Please enter a Quantity.</span>-->
+        </div>
+        <div class="col-md-12 form-group padding-0px">
+            <div class="form-group col-md-6 padding-0px"> 
+                <h4 class="font-weight form-group-h4">Price</h4> 
+            </div>      
+            <div class="form-group col-md-6 padding-0px">
+                 <span class="price-filter font-weight ">$200 - $ 500</span>
+            </div>
+        </div>       
+        <div class="form-group">
+            <input type="number" ng-model="PriceFrom" class="form-control floating-label" id="quantity" placeholder="Price">
+        </div> 
+        <div class="col-md-12 form-group padding-0px">
+            <div class="form-group col-md-6 padding-0px">
+                <label for="categoryId">DeliveryDate</label>
+            </div>
+            <div class="form-group col-md-6 ">
+                        <script type="text/javascript">
+                             $(function () {
+                                $('#datetimepicker1').datetimepicker();
+                            });
+                        </script>
+                <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control" ng-model="DeliveryDate" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+        <div class="form-group col-md-12  padding-0px">
+            <div class="form-group col-md-6 padding-0px">
+                <label for="categoryId">Color</label>
+            </div>    
+            <div class="form-group col-md-6 color-button">
+                <button type="button" class="btn btn-success"></button>
+            </div>    
+        </div>  
+        <div class="form-group  col-md-12  padding-0px">
+            <div class="form-group col-md-6 padding-0px">
+                <label for="categoryId">Min Size </label>
+            </div>    
+            <div class="form-group col-md-6 color-button">
+                <select class="form-control" id="sel1" ng-model="MinSize">
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+                    <option>XXL</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group  col-md-12  padding-0px">
+            <div class="form-group col-md-6 padding-0px">
+                <label for="categoryId">Max Size </label>
+            </div>    
+            <div class="form-group col-md-6 color-button">
+                <select class="form-control" id="sel1" ng-model="MaxSize">
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+                    <option>XXL</option>
+                </select>
+            </div>
+        </div>
+        <!--<div class="col-md-16">
+            <div class="form-group col-md-8">
+                <h6 class="font-weight form-group-h4">Min Size</h6>
+            </div>
+            <div class="form-group col-md-8">
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect enquiryBtn">
+                    L
+                </button>
+            </div>
+        </div>
+        <div class="col-md-16">
+            <div class="form-group col-md-8">
+                <h6 class="font-weight form-group-h4">Min Size</h6>
+            </div>
+            <div class="form-group col-md-8">
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect enquiryBtn">
+                    S
+                </button>
+            </div>
+        </div>-->  	
+
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+            <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked />
+            <span class="mdl-radio__label linkNetwork">Link network platform</span>
+        </label><br>
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+            <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked />
+            <span class="mdl-radio__label cmpnyWebShop">Company Webshop</span>
+        </label>
+        <div class="form-group  col-md-12  padding-0px"> 
+            <div class="form-group col-md-6 padding-0px">
+
+            </div> 
+            <div class="form-group col-md-6 padding-0px">
+                <button type="submit" class="btn btn-primary" ng-click="searchProducts() ;">
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search
+                </button>
+            </div>    
+    </form>
+</div>

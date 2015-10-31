@@ -1,0 +1,28 @@
+<div class="widget folders">
+    <div class="text-center  col-md-12">
+        <label class="folder-tabheader">User Folders</label>
+    </div>
+    <div class="col-md-12  card-projection  padding-t-10 padding-b-10" ng-repeat="Item in folderResult.data" ng-click="openFolder(Item.FolderID);">
+        <!-- <div class="card-projection"> -->
+        <div class="col-md-2">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i><i class="fa  fa-folder fa-stack-1x fa-inverse"></i>
+            </span>
+        </div>
+        <div class="col-md-6">
+            <label class="font-weight-500">{{Item.FolderTitle}}</label><br>
+            <label class="font-weight-500 date-label">{{Item.DateCreated}}</label>
+        </div>
+        <div class="col-md-4 show-edit-delete padding-t-10">
+            <div class="col-md-2">
+                <a href=""><i class="fa  fa-edit (alias) fa-stack-1x"></i></a>
+            </div>
+            <div class="col-md-2">
+                <a href=""><i class="zmdi zmdi-delete"></i></a>
+            </div>
+        </div>
+        <!-- </div> -->
+    </div>
+  
+</div>
+

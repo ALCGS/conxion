@@ -1,0 +1,63 @@
+<div class="widget product-details">
+    <div class="loading-container" ng-show="displayObject.loading">
+        <div class="loading"><span>Searching Products..</span></div>
+    </div>       
+    <div class="page-header">
+        <h1>Hot Deals</h1>
+        <a href="#" class="view_link">View All</a>
+    </div>
+
+            <div class="row" ng-hide="displayObject.loading">
+                <div class="{{displaySize}} product-card" ng-repeat="item in displayObject.data">
+                    
+                        <div class="card hot-deals-card">
+                            <div class="card-header">
+                                <h5 class="pull-left" style="max-width: 180px; height: 16px; overflow: hidden;">{{item.Name}}</h5>
+                                <div class="pull-right folder-plus">
+                                    <a href="#"><span class="fa-stack fa-xs"><i class="fa fa-circle fa-stack-2x"></i> <i class="icon icon-folder-add fa-stack-1x"></i></span></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-6 col-sm-12 col-xs-6 xxs-12 card-body-left">
+                                    <div class="image-content">
+                                        <a class="btn btn-material-pink btn-fab btn-raised mdi-maps-local-grocery-store" href="javascript:void(0)"><div class="ripple-wrapper"></div></a>
+                                        <div class="card-image">
+                                            <img src="{{item.ImageURL}}" class="pull-justified" alt="product.Name" style="max-width:300px; max-height:170px;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-6 col-sm-12 col-xs-6 xxs-12">
+                                    <div class="card-body">
+                                        <div class="pull-justified">
+                                            <p class="pull-left">Quantity</p>
+                                            <!--<p class="pull-right"><span class="green_fg">500</span>/600</p>-->
+                                            <p class="pull-right"><span class="green_fg">{{item.Prices[item.Prices.length-1].MinQuantity}}</span>/{{item.Prices[item.Prices.length-1].MaxQuantity}}</p>
+                                        </div>
+                                        <div class="progress">
+                                            <div style="width: 20%" class="progress-bar progress-bar-primary"></div>
+                                        </div>
+                                        <div class="pull-justified">
+                                            <div class="details pull-left">
+                                                <!--<p><i class="fa fa-usd"></i> <i class="fa fa-long-arrow-down"></i> 100 required</p>-->
+                                                <p><i class="fa fa-usd"></i> <i class="fa fa-long-arrow-down"></i>{{item.MinimumOrder}}</p>
+                                                <p style="max-width:130px; height:16px; overflow:hidden;"><i class="zmdi zmdi-time"></i>{{item.DeliveryTime}}</p>
+                                            </div>
+                                            <div class="pull-right">
+                                                <h3 class="price">{{item.Currency}} {{item.Prices[item.Prices.length-1].Price}}</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+
+            </>
+
+        
+    
+    <div class="msg-container" ng-show="displayObject.data.length === 0">
+        <div class="msg"><span>Sorry! No products found.</span></div>
+    </div>
+</div>
+

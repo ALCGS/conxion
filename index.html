@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html ng-app="mainApp">
+
+<head>
+    <base href="/" />
+
+    <!-- Fonts 
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,600italic,600,700,700italic,800,800italic'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">-->
+
+    <!-- Angular Material 
+    <link href="css/angular-material.min.css" rel="stylesheet">
+    <link href="css/angular-material.layouts.min.css" rel="stylesheet">-->
+
+    <!-- Libraries -->
+    <!--<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/roboto.min.css" rel="stylesheet">
+    <link href="css/material.css" rel="stylesheet">
+    <link href="css/material.min.css" rel="stylesheet">
+    <link href="css/material-wfont.css" rel="stylesheet">
+    <link href="css/material-wfont.min.css" rel="stylesheet">
+    <link href="css/font-icons.css" rel="stylesheet">
+    <link href="css/ripples.css" rel="stylesheet">
+    <link href="css/ripples.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,600italic,600,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href="css/material-design-iconic-font.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- App -->
+    <link href="css/conxion.css" rel="stylesheet">
+
+
+</head>
+<body ng-controller="AppCtrl as app">
+    <!-- Site Contetn Starts -->
+
+    <div class="wrapper fill-height">
+        <div class="side-bar">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/logo.png" class="img-responsive center-block hidden-xs-sm" />
+                    <img src="images/logo_min.PNG" class="img-responsive center-block hidden-md-lg" />
+                </a>
+            </div>
+
+            <div class="categories-content">
+                <h3 class="hidden-xs-sm"><i class="fa fa-list-ul"></i> Categories</a></h3>
+                <ul class="categories-list">
+                    <li><a href="#"><i class="fa fa-gift"></i> <span>Gifts &amp; Special (20)</span> </a></li>
+                    <li><a href="#"><i class="fa fa-gift"></i> <span>Clothings (20)</span> </a></li>
+                    <li><a href="#"><i class="fa fa-gift"></i> <span>Stationaries (20)</span> </a></li>
+                    <li><a href="#"><i class="fa fa-gift"></i> <span>Shoes &amp; Bags (20)</span> </a></li>
+                    <li><a href="#"><i class="fa fa-gift"></i> <span>Computers &amp; Office (20)</span> </a></li>
+                    <li><a href="#"><i class="fa fa-gift"></i> <span>Consumer Electronics (20)</span> </a></li>
+                    <li><a href="#"><i class="fa fa-gift"></i> <span>Phones &amp; Tablets (20)</span> </a></li>
+                    <li><a href="#"><i class="fa fa-gift"></i> <span>Jewellery &amp; Watches (20)</span> </a></li>
+                    <li><a href="#"><i class="fa fa-gift"></i> <span>Home Products (20)</span> </a></li>
+
+                </ul>
+            </div>
+
+            <div class="social-icons">
+                <ul class="social-icons-list">
+                    <li><a href="#"><span class="fa-stack fa-xs"><i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-facebook fa-stack-1x"></i></span></a></li>
+                    <li><a href="#"><span class="fa-stack fa-xs"><i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-twitter fa-stack-1x"></i></span></a></li>
+                    <li><a href="#"><span class="fa-stack fa-xs"><i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-linkedin fa-stack-1x"></i></span></a></li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <div class="wrapper-content fill-height">
+            <!-- Your site -->
+
+            <div class="container-fluid ng-scope fill-height tab-right-main">
+                <div class="row fill-height">
+                    <div class="col-lg-8 col-md-8">
+                        <div class="row product-cnt-maindiv">
+
+                            <!-- Navbar Starts -->
+                            <div class="navbar navbar-default margin-b-0">
+                                <div class="navbar-header hidden-md-lg">
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                    <a class="navbar-brand" href="javascript:void(0)"><img src="images/logo_xs.png" class="img-responsive" /></a>
+                                </div>
+                                <div class="navbar-collapse collapse navbar-responsive-collapse">
+                                    <ul class="nav navbar-nav">
+                                        <li class="active"><a href="javascript:void(0)"><img src="images/menu/denmark-flag.png" style="width:20px;" /></a></li>
+                                        <li><a href="javascript:void(0)"><img src="images/menu/uk-flag.png" style="width:20px;" /></a></li>
+                                    </ul>
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <!--<li class="hidden-xs icon"><a href="javascript:void(0)"><i class="zmdi zmdi-home"></i></a></li>-->
+
+                                        <li><a href="javascript:void(0)">Design Generator</a></li>
+                                        <li><a href="javascript:void(0)">About</a></li>
+                                        <li><a href="javascript:void(0)">Supplier</a></li>
+                                        <li class="hidden-xs icon"><a href="javascript:void(0)"><i class="zmdi zmdi-account-circle"></i></a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Navbar Ends -->
+
+                            <div ui-view="main" class="sidebar-content fill-height"></div>
+
+                        </div>
+                    </div>
+                    <!-- Widget Content Starts -->
+                    <div class="col-lg-4 col-md-4 fill-height" style="position: relative">
+                        <div class="widget-column fill-height">
+                            <!--<div style="position: relative">
+                                <ul class="nav nav-tabs widget-nav">
+                                    <li class="active"><a ui-sref="home.search" data-toggle="tab"><i class="fa fa-search"></i></a></li>
+                                    <li><a ui-sref="home.link" data-toggle="tab"><i class="fa fa-link"></i></a></li>
+                                    <li><a ui-sref="home.folder" data-toggle="tab"><i class="fa fa-folder"></i></a></li>
+                                    <li><a ui-sref="home.cart" data-toggle="tab"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                            </div>-->
+                            <div id="myTabContent" class="myTabContent">
+                                <div ui-view="sidebar" class="sidebar-content fill-height"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Widget Content Ends -->
+                    <div class="side-accordian padding-0">
+                        <ul class="nav nav-tabs widget-nav padding-0 ">
+                            <li class="active"><a ui-sref="home.search" data-toggle="tab" class="padding-0"><i class="fa fa-search"></i></a></li>
+                            <li><a ui-sref="home.link" data-toggle="tab" class="padding-0"><i class="fa fa-link"></i></a></li>
+                            <li><a ui-sref="home.folder" data-toggle="tab" class="padding-0"><i class="fa fa-folder"></i></a></li>
+                            <li><a ui-sref="home.cart" data-toggle="tab" class="padding-0"><i class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- Libraries -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
+    <script src="app/libs/bootstrap.min.js" type="text/javascript"></script>
+
+    <!-- Bootstrap Material -->
+    <script src="app/libs/ripples.min.js"></script>
+    <script src="app/libs/material.min.js"></script>
+
+    <!-- App Libs -->
+    <script src="app/libs/angular.min.js" type="text/javascript"></script>
+    <script src="app/libs/angular-ui-router.min.js" type="text/javascript"></script>
+    <script src="app/libs/ocLazyLoad.min.js" type="text/javascript"></script>
+    <script src="app/libs/angular-animate.min.js" type="text/javascript"></script>
+    <script src="app/libs/angular-aria.min.js" type="text/javascript"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.1/angular-messages.js"></script>
+
+    <!-- Angular Material -->
+    <script src="app/libs/angular-aria.min.js" type="text/javascript"></script>
+    <script src="app/libs/angular-material.min.js" type="text/javascript"></script>
+
+    <!-- Angular FW Scripts -->
+    <script src="app/app.js" type="text/javascript"></script>
+    <script src="app/widget-types/search-type.js" type="text/javascript"></script>
+    <script src="app/core/views.js" type="text/javascript"></script>
+    <script src="app/core/widgets.js" type="text/javascript"></script>
+    <script src="app/core/api-service.js" type="text/javascript"></script>
+    <script src="app/core/widget-service.js" type="text/javascript"></script>
+
+    <!-- Widgets -->
+    <script src="app/widgets/advancedSearch/advancedSearch.js" type="text/javascript"></script>
+    <script src="app/widgets/productCard/productCard.js" type="text/javascript"></script>
+    <script src="app/widgets/banner/banner.js" type="text/javascript"></script>
+    <script src="app/widgets/folders/folders.js"></script>
+    <script src="app/widgets/productDetails/productDetails.js"></script>
+    <script src="app/widgets/shoppingCart/shoppingCart.js"></script>
+
+    <!-- Templates -->
+    <script src="app/templates/about/about.js"></script>
+
+    <script>
+        $(document).ready(function ()
+        {
+            // This command is used to initialize some elements and make them work properly
+            $.material.init();
+        });
+    </script>
+</body>
+
+</html>
+

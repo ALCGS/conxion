@@ -1,0 +1,118 @@
+<div class="widget folders">
+    <div ng-show="selectFolder">
+        <div class="text-center  col-md-12">
+            <label class="folder-tabheader">User Folders</label>
+        </div>
+        <div class="col-md-12  card-projection  padding-t-10 padding-b-10" ng-repeat="Item in folderResult.data" ng-click="openFolder();">
+            <!-- <div class="card-projection"> -->
+            <div class="col-md-2">
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i><i class="fa  fa-folder fa-stack-1x fa-inverse"></i>
+                </span>
+            </div>
+            <div class="col-md-6">
+                <label class="font-weight-500">{{Item.FolderTitle}}</label><br>
+                <label class="font-weight-500 date-label">{{Item.DateCreated}}</label>
+            </div>
+            <div class="col-md-4 show-edit-delete padding-t-10">
+                <div class="col-md-2">
+                    <a href=""><i class="fa  fa-edit (alias) fa-stack-1x"></i></a>
+                </div>
+                <div class="col-md-2">
+                    <a href=""><i class="zmdi zmdi-delete"></i></a>
+                </div>
+            </div>
+            <!-- </div> -->
+        </div>
+        <div class="col-md-12  card-projection  padding-t-10 padding-b-10">
+            <!-- <div class="card-projection"> -->
+            <div class="col-md-2">
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x circle-color-red "></i><i class="fa   fa-heart fa-stack-1x fa-inverse"></i>
+                </span>
+            </div>
+            <div class="col-md-6">
+                <label class="font-weight-folderdesign ">Liked Products</label><br>
+                <label class="date-label">Oct 28,2015</label>
+            </div>
+            <div class="col-md-4 show-edit-delete padding-t-10">
+                <div class="col-md-2">
+                    <a href=""><i class="fa  fa-edit (alias) fa-stack-1x"></i></a>
+                </div>
+                <div class="col-md-2">
+                    <a href=""><i class="zmdi zmdi-delete"></i></a>
+                </div>
+            </div>
+            <!-- </div> -->
+        </div>
+        <div class="col-md-12  card-projection  padding-t-10 padding-b-10">
+            <!-- <div class="card-projection"> -->
+            <div class="col-md-2">
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x circle-color-blue "></i><i class="fa   fa-clock-o fa-stack-1x fa-inverse"></i>
+                </span>
+            </div>
+            <div class="col-md-6">
+                <label class="font-weight-folderdesign ">Awaiting Orders</label><br>
+                <label class="date-label">Oct 28,2015</label>
+            </div>
+            <div class="col-md-4 show-edit-delete padding-t-10">
+                <div class="col-md-2">
+                    <a href=""><i class="fa  fa-edit (alias) fa-stack-1x"></i></a>
+                </div>
+                <div class="col-md-2">
+                    <a href=""><i class="zmdi zmdi-delete"></i></a>
+                </div>
+            </div>
+            <!-- </div> -->
+        </div>
+
+    </div>  
+    <div ng-show="!selectFolder">
+        <div class="opened-folder-header" id="">
+            <div class="heading-sideTab">
+                <div class="">
+                    <span class="fa-stack fa-lg" ng-click="selectFolder=false;">
+                        <i class="fa fa-arrow-left fa-stack-1x"></i>
+                    </span>
+                </div>
+                <div>
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x circle-color-red "></i><i class="fa   fa-heart fa-stack-1x fa-inverse"></i>
+                    </span>
+                </div>
+                <div class="heading-font-size">
+                    <h3>Folders</h3>
+                </div>
+                <div class="right-side-list">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-th-list fa-stack-1x"></i>
+                    </span>
+                    <span class="fa-stack fa-lg thumnail-icon">
+                        <i class="fa fa-th fa-stack-1x"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="folder-path text-center">
+            <label class="folder-tabheader">Folder / Liked Product</label>
+        </div>
+        <div class="prod-img-content card-projection padding-10" ng-repeat="Item in productlistResult.data">
+            <div class="product-image pull-left">
+                <img src="{{item.ImageURL}}" class="text-center">
+            </div>
+            <div class="clearfix">
+            </div>
+            <div class="heading-font-size">
+                <h3 class="product-name-heading">Item.Name</h3>
+                <h6><label class="label-quantity">Quantity : <span>{{Item.Prices[Item.Prices.length-1].MinQuantity}}/{{Item.Prices[Item.Prices.length-1].MaxQuantity}}</span></label></h6>
+                <h6 class="clock-image"><span class="padding-l-15">Item.DeliveryTime</span></h6>
+            </div>
+            <div>
+                <span class="money-value padding-l-20">{{Item.Currency}} {{Item.Prices[Item.Prices.length-1].Price}}</span>
+            </div>
+        </div>
+       
+    </div>
+</div>
+

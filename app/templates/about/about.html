@@ -1,0 +1,32 @@
+
+
+<md-content layout="column" flex class="md-padding" id="about">
+    <div ng-controller="AboutController as a">
+        <h1>About Controller {{a.name}}</h1>
+        <h4>{{$state.current.name}}</h4>
+        <h5><pre>
+            $stateParams = {{$stateParams}}
+             $state full url = {{ $state.$current.url.source}}
+            </pre>
+        </h5>
+        <test></test>
+        <md-checkbox ng-model="isChecked" aria-label="Finished?">
+            Finished ?
+        </md-checkbox>
+        <md-checkbox md-no-ink ng-model="hasInk" aria-label="No Ink Effects">
+            No Ink Effects
+        </md-checkbox>
+        <md-checkbox ng-disabled="true" ng-model="isDisabled" aria-label="Disabled">
+            Disabled
+        </md-checkbox>
+        <md-datepicker ng-model="birthday"></md-datepicker>
+       <md-grid-list md-cols="5" md-gutter="1em" md-row-height="4:3">
+  <md-grid-tile>
+  <md-grid-tile-footer>
+    <h3>This is a footer</h3>
+  </md-grid-tile-footer>
+</md-grid-tile>
+</md-grid-list>
+    </div> 
+    <test></test>
+</md-content>

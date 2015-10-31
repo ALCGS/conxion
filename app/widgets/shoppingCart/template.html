@@ -1,0 +1,82 @@
+<div class="widget shoppingCart">
+
+    
+        <div id="myTabContent" class="shopping-cart-tab-content">
+            <div class="heading-sideTab padding-20">
+                <h3>
+                    Cart
+                    <div class="dropdown pull-right">
+                        <a href=""><i class="fa fa-shopping-cart header-cart-icon"></i></a>
+                        <a data-target="#" href="bootstrap-elements.html" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="true">
+                            <i class="mdi-navigation-more-vert"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="javascript:void(0)">Action</a></li>
+                            <li><a href="javascript:void(0)">Another action</a></li>
+                            <li><a href="javascript:void(0)">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="javascript:void(0)">Separated link</a></li>
+                        </ul>
+                    </div>
+                </h3>
+            </div>
+            <!--   <div class="opened-folder-header" id="">
+                 <div class="heading-sideTab padding-20">
+                     <div class="heading-font-size">
+                         <h3>Cart</h3>
+                     </div>
+                     <div class="right-side-list">
+                         <span class="fa-stack fa-lg">
+                             <i class="fa fa-th-list fa-stack-1x"></i>
+                         </span>
+                         <span class="fa-stack fa-lg thumnail-icon">
+                             <i class="fa fa-th fa-stack-1x"></i>
+                         </span>
+                     </div>
+                 </div>
+             </div>  -->
+            <div class="prod-img-content card-projection padding-20" ng-repeat="Item in shoppingResult.data">
+                <div class="product-image pull-left">
+                    <img src={{Item.ItemImageURL}} style=" width: 80%; height: 93px;">
+                </div>
+                <div class="clearfix">
+                </div>
+                <div class="heading-font-size padding-l-10">
+                    <h3 class="product-name-heading">{{Item.ItemName}}</h3>
+                    <h6><label class="label-quantity">Orders : <span>{{Item.ItemQuantity}} X $ {{Item.ItemPrice}}</span></label></h6>
+                    <span class="money-value">$ {{Item.TotalAmount}}</span>
+                </div>
+            </div>
+         
+            <div class="check-out-div">
+                <div class="padding-r-10 pull-right">
+                    <button type="submit" class="btn btn-primary check-out-btn">CHECK OUT </button>
+                </div>
+            </div>
+            <div class="heading-sideTab padding-20">
+                <h3>
+                    Logo Upload
+                    <div class="dropdown pull-right">
+                        <a data-target="#" href="bootstrap-elements.html" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="true">
+                            <i class="mdi-navigation-more-vert"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="javascript:void(0)">Action</a></li>
+                            <li><a href="javascript:void(0)">Another action</a></li>
+                            <li><a href="javascript:void(0)">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="javascript:void(0)">Separated link</a></li>
+                        </ul>
+                    </div>
+                </h3>
+            </div>
+            <div class="padding-20">
+                <div class="drag-and-drop padding-20 text-center">
+                    <h3>Drag and Drop</h3>
+                    <h3>Your Logo</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    

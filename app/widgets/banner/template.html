@@ -1,0 +1,29 @@
+<div class="widget banner">
+    <div id="carousel-example-captions" class="carousel slide" data-ride="carousel" data-interval="2000">
+        <!--<ol class="carousel-indicators">
+            <li data-target="#carousel-example-captions" data-slide-to="0" class=""></li>
+            <li data-target="#carousel-example-captions" data-slide-to="1" class="active"></li>
+            <li data-target="#carousel-example-captions" data-slide-to="2" class=""></li>
+        </ol>-->
+        <div class="carousel-inner" role="listbox" id="carousel-inner">
+
+            <div class="item" ng-repeat="item in bannerResult.data" ng-class="{active: $first}">
+                <img ng-src="{{item.ImageURL}}" data-holder-rendered="true">
+                <div class="carousel-caption">
+                    <h3>Second slide label</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+
+        </div>
+        <!--<a class="left carousel-control" role="button" data-slide="prev" href="/#/carousel-example-captions">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" role="button" data-slide="next" href="/#/carousel-example-captions">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>-->
+    </div>
+</div>
+
